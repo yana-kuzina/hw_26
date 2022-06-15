@@ -23,8 +23,8 @@ const ProfileForm = () => {
         <input type="text" {...register("lastName", { required: true })} />
         {errors.lastName && <span>Last name is a required field</span>}
       </label>
-      Country:{" "}
       <label>
+        Country:{" "}
         <select {...register("country", { required: true })}>
           <option value=""></option>
           <option value="ukraine">Ukraine</option>
