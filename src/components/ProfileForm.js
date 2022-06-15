@@ -24,12 +24,14 @@ const ProfileForm = () => {
         {errors.lastName && <span>Last name is a required field</span>}
       </label>
       Country:{" "}
-      <select {...register("country", { required: true })}>
-        <option value=""></option>
-        <option value="ukraine">Ukraine</option>
-        <option value="usa">USA</option>
-        <option value="mordor">Mordor</option>
-      </select>
+      <label>
+        <select {...register("country", { required: true })}>
+          <option value=""></option>
+          <option value="ukraine">Ukraine</option>
+          <option value="usa">USA</option>
+          <option value="mordor">Mordor</option>
+        </select>
+      </label>
       {errors.country && <span>Country is a required field</span>}
       <button type="submit">Submit</button>
     </form>
